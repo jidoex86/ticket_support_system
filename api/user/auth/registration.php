@@ -45,7 +45,7 @@ if(isset(
         }else{
 
             // hash password
-            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+            $password = password($password, PASSWORD_DEFAULT);
 
             // insert user
             $insertUser = $connect->prepare("
